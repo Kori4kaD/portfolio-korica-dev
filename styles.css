@@ -11,7 +11,7 @@ html {
 :root {
   --bg: #111111;
   --plashka: rgba(0, 0, 0, 0.5);
-  --textColor:#EBCEF1;
+  --textColor:rgb(236, 207, 242);
   --fontTitle: "Cormorant", serif;
   --green:  #008000;
   --dark_green:#025302;
@@ -249,9 +249,12 @@ hr{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 90%;
 }
 .project>p{
-  width: 50%;
+  background-color: rgba(236, 207, 242, 0.5);
+  padding: 15px;
+  color: black;
 }
 .project>a>img {
   
@@ -261,12 +264,12 @@ hr{
 .img_project {
   width: 80%;
   /* margin-left: 10%; */
-  border-radius: 20px;
+  /* border-radius: 20px; */
   position: relative;
   overflow: hidden;
 }
 .projects .img_project {
-  margin-left: 10%;
+  margin:0 auto;
 }
 
 

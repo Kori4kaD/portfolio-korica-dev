@@ -51,8 +51,8 @@
   .header_line_two{
       margin-top: 20px;  
   }
-  .project>p{
-    width: 80%;
+  .img_project{
+    width: 90%;
   }
 }
 @media (max-width: 860px) {  
@@ -142,9 +142,9 @@
    .diploma img {
     width: 100%;
    }
-   .project>p{
-    width: 90%;
-  }
+   .img_project {
+    width: 100%;
+}
     .btn-up {
       right: 2vw;
       bottom: 4vh;
