@@ -35,6 +35,10 @@
   .img_project:hover::after {
     opacity: 0; /* Полная прозрачность при наведении */
   }
+ .project:hover > p {
+    background-color: var(--textColor);
+    transition: background-color 0.3s ease;
+  }
   .contacts_link img:hover{
    
     transform: scale(1.5);

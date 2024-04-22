@@ -255,6 +255,7 @@ hr{
   background-color: rgba(236, 207, 242, 0.5);
   padding: 15px;
   color: black;
+  transition: background-color 0.3s ease;
 }
 .project>a>img {
   
