@@ -1,17 +1,37 @@
+import { langArr } from './lang.js';
+
 var video = document.getElementById('bg-video');
 video.playbackRate = 1.5; // Устанавливаем скорость воспроизведения на 1.5x
 
 
 
-// /*=============PRELOADER=================*/
-// window.onload = function () {
-//   document.body.classList.add('loaded_hiding');
-//   window.setTimeout(function () {
-//     document.body.classList.add('loaded');
-//     document.body.classList.remove('loaded_hiding');
-//   }, 500);
-// }
+/*=============MULTILANG=================*/
 
+
+
+document
+	.querySelectorAll('.lang button')
+	.forEach((b) => b.addEventListener('click', setLang));
+
+function setLang() {
+	for (let key in langArr) {
+		let elem = document.querySelector('.lng-' + key);
+		if (elem) {
+			elem.innerHTML = langArr[key][this.value];
+		}
+    
+	}
+  console.log (this.value);
+  let active_btns=document.querySelectorAll('button.lng_btn');
+active_btns.forEach(btn => {
+    if (btn.value === this.value) {
+        btn.classList.add("active");
+    } else {
+        btn.classList.remove("active");
+    }
+});
+
+}
 
 
 

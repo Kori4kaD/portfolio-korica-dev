@@ -24,17 +24,22 @@
             <a href="/">
               <img src="images/Logo1.png" />
             </a>
+            
           </div>
           <div class="nav_menu">
             <nav>
               <ul class="menu" id="headerNavMenu">
-                <li><a href="/">Головна</a></li>
-                <li><a href="/#about_me">Про мене</a></li>
-                <li><a href="/#projects">Проєкти</a></li>
-                <li><a href="/#contacts">Контакти</a></li>
-                <li><a href="/resume_KoricaDev.pdf" target="_blank">Резюме</a></li>
+                <li class="lng-home"><a href="/">Головна</a></li>
+                <li class="lng-about"><a href="/#about_me">Про мене</a></li>
+                <li class="lng-projects"><a href="/#projects">Проєкти</a></li>
+                <li class="lng-contacts"><a href="/#contacts">Контакти</a></li>
+                <li class="lng-resume"><a href="/resume_KoricaDev.pdf" target="_blank">Резюме</a></li>
               </ul>
             </nav>
+          </div>
+          <div class="lang">
+            <button value="en" class="lng_btn " id="lang-en">EN</button>
+            <button value="ua" class="lng_btn active" id="lang-ua">UA</button>
           </div>
           <div class="toggle-wrap" id="openMobileMenu"></div>
         </div>
@@ -42,13 +47,14 @@
     </header>
 
     <main>
+    
       <section>
         <div class="container">
           <div class="about" id="about">
             <div class="about_text" id="about_me">
               <h1>KoricaDev</h1>
 
-              <p>
+              <p class="lng-about_me_text">
                 Я Дарина, молодий дипломований фронтенд розробник, створюю сайти
                 з нуля, дотримуюсь поставлених завдань, побажань замовника.
                 Готова працювати самостійно з проектом, завданням, чи стати
@@ -58,7 +64,7 @@
                 знаходжу спільну мову.
               </p>
              <a href="/resume_KoricaDev.pdf" target="_blank">
-              <button >Резюме</button>
+              <button class="lng-about_me_btn">Резюме</button>
              </a> 
 
             </div>
@@ -69,17 +75,17 @@
           </div>
           <div class="about">
             <div class="education">
-              <h2>1.Освіта</h2>
+              <h2 class="lng-education_title">1.Освіта</h2>
 
               <ul>
-                <li>
+                <li class="lng-education_goit">
                   2022р Проходження марафону HTML/CSS в школі <b>"GoIT"</b>
                 </li>
-                <li>
+                <li class="lng-education_banda">
                   2022-2023 Навчання на курсі "Програміст-фрілансер" від
                   <b>IT-Banda</b>
                 </li>
-                <li>
+                <li class="lng-education_step">
                   <p>
                     2023-2024р Проходження навчання в
                     <b>Комп'ютерній Академії IT STEP</b> на курсі Front-end
@@ -92,11 +98,9 @@
                     <div class="img_project">
                       <img  src="images/diploma2.png" />
                     </div>
-                   
-                   
-                  </div>
+                    </div>
                 </li>
-                <li>
+                <li class="lng-techology">
                   <h3>Освоєні технології:</h3>
                   <ul class="technology">
                     <li>HTML/CSS</li>
@@ -271,6 +275,6 @@
       </p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

@@ -76,6 +76,7 @@ button {
   cursor: pointer;
   font-size: 16px;
   transition: background 0.5s ease;
+  color: #111111;
 }
 
 
@@ -350,100 +351,22 @@ footer {
 }
 
 
-/*==============================PRELOADER=======================================*/
 
 
 
-
-
-
-.preloader {
-  /*фиксированное позиционирование*/
-  position: fixed;
-  /* координаты положения */
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  /* фоновый цвет элемента */
-  background:#161616;
-  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-  z-index: 1001;
-}
-.pre_img {
-  /* background-image: url(images/logo_Di.png); */
-  background-size: cover;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  top: calc(50vh - 50px);
-  left:calc(50vw - 50px);
-}
-.preloader__row {
-  position: absolute;
-    top: 1%;
-    left: -3%;
-    width: 180px;
-    height: 180px;
-    margin-top: -35px;
-    margin-left: -35px;
-    text-align: center;
-    animation: preloader-rotate 3s infinite linear;
+.lang {
+  display: flex;
+  gap: 5px;
+justify-content: space-around;
 }
 
-.preloader__item {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  /* background-image: url(images/tomato.png); */
-  background-size: cover;
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  animation: preloader-bounce 3s infinite ease-in-out;
+.lang button {
+  padding: 5px;
+  font-size: 12px;
 }
-
-.preloader__item.two {
-  top: auto;
-  bottom: 71px;
-  animation-delay: -1s;
-  left: 0px;
-
+button.active {
+  background-color: var(--purpur);
+  color: var(--textColor);
 }
-
-.preloader__item.three {
-  top: auto;
-  bottom: 0;
-  animation-delay: -2s;
-}
-
-@keyframes preloader-rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes preloader-bounce {
-
-  0%,
-  100% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-}
-
-.loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
-}
-
-.loaded .preloader {
-  display: none;
-}
-
-
 
 

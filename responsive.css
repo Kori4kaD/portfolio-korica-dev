@@ -83,7 +83,7 @@
       height: 30px;
       display: flex;
       position: absolute;
-      top: 20px;
+      top: 26px;
       right: 0px;
       background-image: url(images/menu.png);
       background-repeat: no-repeat;
@@ -96,10 +96,13 @@
     .toggle-wrap.open  {
       width: 25px;
       height: 25px;
+      top: 32px;
       background-image: url(images/close.png);
       background-position-y: 0px;
     }
-  
+  .lang {
+    margin-right: 54px;
+  }
     .menu {
       min-width: 273px;
       display: flex;
