@@ -7,6 +7,24 @@ video.playbackRate = 1.5; // Устанавливаем скорость вос�
 
 /*=============MULTILANG=================*/
 
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.lng_btn');
+  const resumeLink = document.querySelector('.lng-resume');
+  const resumeBtn = document.querySelector('.resume_btn');
+
+  buttons.forEach(button => {
+      button.addEventListener('click', function() {
+          const lang = this.value;
+          if (lang === 'en') {
+              resumeLink.setAttribute('href', '/resume_KoricaDev_en.pdf');
+              resumeBtn.setAttribute('href', '/resume_KoricaDev_en.pdf');
+          } else {
+              resumeLink.setAttribute('href', '/resume_KoricaDev.pdf');
+              resumeBtn.setAttribute('href', '/resume_KoricaDev.pdf');
+          }
+      });
+  });
+});
 
 
 document
@@ -21,7 +39,7 @@ function setLang() {
 		}
     
 	}
-  console.log (this.value);
+  
   let active_btns=document.querySelectorAll('button.lng_btn');
 active_btns.forEach(btn => {
     if (btn.value === this.value) {
